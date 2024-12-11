@@ -1,0 +1,21 @@
+﻿<Window x:Class="Balashova_PR8_Sport_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Balashova_PR8_Sport_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="550"
+        WindowStartupLocation="CenterScreen"  Icon="/Image/logo2.png">
+
+    <Grid>
+        <Canvas>
+            <Label Content="Вход и регистрация" Height="80" Width="550" Style="{StaticResource Label1}"/>
+            <TextBlock Text="Введите Ваш номер телефона" Canvas.Left="100" Canvas.Top="115" Width="350" 
+               Style="{StaticResource Price}"/>
+            <TextBox Style="{StaticResource Input}"/>
+            <Button x:Name="Vhod" Content="Получить код" Style="{StaticResource But1}" Height="45"
+            Click="Vhod_Click"  Canvas.Left="175" Canvas.Top="295"/>
+        </Canvas>
+    </Grid>
+</Window>
